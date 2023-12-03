@@ -6,15 +6,16 @@ body {
 
 ul {
     list-style-type: none;
+    padding: 0px;
 }
 
 .container {
     display: grid;
-    grid-template: 1fr auto / 1fr 2fr 1fr;
+    grid-template: 1fr auto / 0.5fr 2fr 1fr;
 }
 
 .sidebar {
-    grid-column: span 1;
+    grid-column: 1;
     grid-row: 1 / span 3;
 }
 
@@ -78,6 +79,37 @@ ul {
 }
 
 .trending-people {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+/* Prettying */
+ul {
+    padding: 0px;
+}
+
+.icons-dashboard {
+    height: 20px;
+    width: auto;
+}
+
+.sidebar {
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+.links > ul > li > img,
+.search-container > img {
+    height: 20px;
+    width: auto;
+}
+
+.links > ul > li {
     display: flex;
     align-items: center;
 }
