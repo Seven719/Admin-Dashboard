@@ -1,0 +1,28 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template: 1fr 1fr 9fr / 1fr 2fr 1fr;
+}
+
+.sidebar {
+    grid-column: span 1;
+    grid-row: 1 / span 3;
+}
+
+.header {
+    grid-column: 2 / span 3;
+}
+
+.main {
+    grid-column: 2 / span 3;
+    grid-row: 3;
+}
+
+ul {
+  list-style-type: none;
+}
