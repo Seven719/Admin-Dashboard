@@ -11,7 +11,7 @@ ul {
 
 .container {
     display: grid;
-    grid-template: 1fr auto / 0.5fr 2fr 1fr;
+    grid-template: 1fr auto / 0.5fr 2fr 0.7fr;
 }
 
 .sidebar {
@@ -25,7 +25,7 @@ ul {
 
 .header {
     display: grid;
-    grid-template: 1fr 1fr / 2fr 1fr;
+    grid-template: 1fr 1fr / 2fr 0.7fr;
 }
 
 .main {
@@ -65,7 +65,7 @@ ul {
 
 .welcome-container {
     display: grid;
-    grid-template: 1fr 1fr / auto 1fr;
+    grid-template: 1fr 1fr / 0.09fr 1fr;
 }
 
 .image-welcome {
@@ -112,4 +112,27 @@ ul {
 .links > ul > li {
     display: flex;
     align-items: center;
+}
+
+.image-profile {
+    border: 1px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image-profile > img {
+    object-fit: cover;
+    object-position: center 16px;
+    transform: scale(1.6);
+}
+
+.image-profile,
+.image-profile > img {
+    height: 60px;
+    width: 60px;
+}
+
+.image-welcome {
+    transform: scale(1.4);
+    justify-self: center;
 }
