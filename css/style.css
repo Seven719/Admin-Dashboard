@@ -2,6 +2,7 @@ html,
 body {
     margin: 0px;
     padding: 0px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 ul {
@@ -178,7 +179,7 @@ ul {
     padding: 10px;
     border: 2px solid grey;
     border-radius: 20px;
-    height: 280px;
+    height: 250px;
     width: 350px;
 }
 
