@@ -2,7 +2,7 @@ html,
 body {
     margin: 0px;
     padding: 0px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Hedvig Letters Sans', 'Open Sans',sans-serif;
     color: #F8F7FF;
     background: #181716;
 }
@@ -158,7 +158,7 @@ ul {
 .card {
     height: 170px;
     background: radial-gradient(800px 800px,#2589BD 29%, #151413);
-    color: black;
+    color: #131517;
     text-align: center;
     padding: 15px;
     margin-right: 20px;
@@ -260,4 +260,10 @@ ul {
 
 .heading {
     font-size: 23px;
+}
+
+.title {
+    font-size: 19px;
+    font-weight: 1000;
+    color: #F8F7FF;
 }
