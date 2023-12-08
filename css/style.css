@@ -3,6 +3,8 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: 'Open Sans', sans-serif;
+    color: #F8F7FF;
+    background: #181716;
 }
 
 ul {
@@ -76,7 +78,7 @@ ul {
 .trending {
     display: flex;
     flex-direction: column;
-    height: 320px;
+    height: 335px;
     width: 300px;
 }
 
@@ -104,29 +106,24 @@ ul {
 .search-container > img {
     height: 25px;
     width: auto;
+    filter: invert(100%);
 }
 
 .links > ul > li {
     display: flex;
     align-items: center;
+    padding: 10px;
 }
 
-.image-profile {
-    border: 1px solid black;
-    border-radius: 50%;
-    overflow: hidden;
-}
 
 .image-profile > img {
-    object-fit: cover;
-    object-position: center 16px;
-    transform: scale(1.6);
-}
-
-.image-profile,
-.image-profile > img {
-    height: 60px;
+    height: 70px;
     width: 60px;
+    clip-path: circle();
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .image-welcome {
@@ -160,7 +157,7 @@ ul {
 
 .card {
     height: 170px;
-    background-color: red;
+    background: radial-gradient(800px 800px,#2589BD 29%, #151413);
     color: black;
     text-align: center;
     padding: 15px;
@@ -171,15 +168,15 @@ ul {
 .trending {
     padding: 10px;
     padding-top: 0px;
-    border: 2px solid grey;
+    border: 2px solid #BFBFBF;
     border-radius: 20px;
 }
 
 .announcements { 
     padding: 10px;
-    border: 2px solid grey;
+    border: 2px solid #BFBFBF;
     border-radius: 20px;
-    height: 250px;
+    height: 243px;
     width: 350px;
 }
 
@@ -239,9 +236,28 @@ ul {
     height: 2rem;
     width: 6rem;
     border-radius: 20px;
-    border: orange;
-    background: orange;
-    color: white;
+    background: radial-gradient(140px 140px,#2589BD 29%, #151413);
+    border: #2589BD;
+    color: #F8F7FF;
     font-size: 15px;
     font-weight: 700;
+}
+
+.links-buttons {
+    font-size: 18px;
+    color: #F8F7FF;
+    border: none;
+    background: none;
+}
+
+.links-buttons:hover {
+    cursor: pointer;
+}
+
+.btns-container button:hover {
+    cursor: pointer;
+}
+
+.heading {
+    font-size: 23px;
 }
